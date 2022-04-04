@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9b6278d855.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="section">
+      <div class="main">
+        <div id="box" class="box">
+          <h1>Games</h1>
+        </div>
+      </div>
+      <div class="display">
+        <!--Creating the child content-->
+        <div class="popup-content">
+          <div id="image-content">
+            <div class="text-content">
+              <h1>Assaissins Creed</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                vitae officiis inventore porro!
+              </p>
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div id="box1">
+              <h1>Assaissins Creed</h1>
+            </div>
+            <!-- <img class="box11" src="./assassins.png" alt="" /> -->
+            <div class="box11"></div>
+          </div>
+          <!-- 2nd -->
+
+          <div id="image-content-1">
+            <div class="text-content-1">
+              <h1>Watch Dog</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                vitae officiis inventore porro!
+              </p>
+              <i class="fa-solid icon fa-gamepad"></i>
+            </div>
+            <div id="box2">
+              <h1>Watch Dog</h1>
+            </div>
+            <img class="box12" src="./watchdog.png" alt="" />
+          </div>
+          <!-- 2nd end -->
+          <div id="image-content-2">
+            <div class="text-content-2">
+              <h1>Far Cry</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                vitae officiis inventore porro!
+              </p>
+              <i class="fa-solid icon fa-gamepad"></i>
+            </div>
+            <div id="box3">
+              <h1>Far Cry</h1>
+            </div>
+            <img class="box13" src="./catcry.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Implementing background video -->
+    <video width="100%" autoplay loop muted>
+      <source src="./gamevideo.mp4" type="video/mp4" />
+      <!-- <source src="movie.ogg" type="video/ogg"> -->
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- implementing jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- For displaying content upon hovering on Game box -->
+    <script>
+      $(".box").hover(
+        function () {
+          $(" .popup-content").addClass("active");
+        },
+
+        function () {
+          $(" .popup-content").addClass(
+            "animate__animated animate__fadeInDown"
+          );
+        }
+      );
+
+      document.querySelector("video").playbackRate = 0.5;
+      // Adding  and removing animation  of child-component upon hovering
+      $("#box1").hover(
+        function () {
+          $(" #box1").addClass("animate__animated animate__fadeOut");
+        },
+        function () {
+          $(" #box1").removeClass("animate__animated animate__fadeOut");
+        }
+      );
+      $("#box2").hover(
+        function () {
+          $(" #box2").addClass("animate__animated animate__fadeOut");
+        },
+        function () {
+          $(" #box2").removeClass("animate__animated animate__fadeOut");
+        }
+      );
+      $("#box3").hover(
+        function () {
+          $(" #box3").addClass("animate__animated animate__fadeOut");
+        },
+        function () {
+          $(" #box3").removeClass("animate__animated animate__fadeOut");
+        }
+      );
+    </script>
+  </body>
+</html>

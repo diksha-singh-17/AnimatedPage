@@ -1,0 +1,299 @@
+/* body {
+        background-image: url(./Games.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      } */
+.activa {
+  color: black;
+  width: 800px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  margin-top: 50px;
+  height: 190px;
+  width: 290px;
+  background-color: rgb(6, 6, 155);
+  color: white;
+  text-align: center;
+}
+@media (min-width: 770px) and (max-width: 2550px) {
+  #box1 {
+    height: 190px;
+    width: 290px;
+    background-color: rgb(30, 128, 155);
+    color: white;
+    margin-top: -80px;
+    position: absolute;
+    text-align: center;
+  }
+  #box2 {
+    height: 190px;
+    width: 290px;
+    background-color: rgb(12, 122, 233);
+    color: white;
+
+    margin-top: 50px;
+    text-align: center;
+    position: absolute;
+  }
+  #box3 {
+    height: 190px;
+    width: 290px;
+    margin-top: -80px;
+    background-color: rgb(81, 216, 236);
+    color: white;
+    text-align: center;
+    position: absolute;
+  }
+  .box11 {
+    height: 190px;
+    width: 290px;
+    background-color: lightskyblue;
+    color: white;
+    margin-top: -80px;
+    background-image: url(./assassins.png);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-position: top;
+    /* background-attachment: fixed; */
+
+    /* object-fit: cover;
+        max-width: 100vmax; */
+    /* position: relative; */
+  }
+  #image-content {
+    position: relative;
+  }
+  .text-content {
+    height: 190px;
+    width: 290px;
+    margin-top: -80px;
+    color: black;
+    text-align: center;
+    position: absolute;
+  }
+  .box12 {
+    height: 190px;
+    width: 290px;
+
+    background-color: purple;
+    color: white;
+    margin-top: 50px;
+    /* position: relative; */
+  }
+  #image-content-1 {
+    position: relative;
+  }
+  .text-content-1 {
+    height: 190px;
+    width: 290px;
+    margin-top: 30px;
+    text-align: center;
+    position: absolute;
+    color: white;
+  }
+  .box13 {
+    height: 190px;
+    width: 290px;
+    margin-top: -80px;
+    background-color: pink;
+    color: white;
+  }
+  #image-content-2 {
+    position: relative;
+  }
+  .text-content-2 {
+    height: 190px;
+    width: 290px;
+    margin-top: -80px;
+    color: white;
+    text-align: center;
+    position: absolute;
+  }
+  #box1:hover,
+  #box2:hover,
+  #box3:hover {
+    opacity: 0;
+  }
+  .fa-solid {
+    color: black;
+  }
+  /* for happening after hover */
+
+  .popup-content {
+    /*Hides child-image content when there is no "active" class */
+    visibility: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* margin-left: 200px; */
+  }
+
+  .popup-content.active {
+    /*Shows child-image content when "active" class is present */
+    visibility: visible;
+  }
+  video {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-attachment: fixed;
+    position: fixed;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+  }
+  .section {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+}
+.animate__animated.animate__slideInDown {
+  --animate-duration: 6s;
+}
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 3s;
+}
+.fa-solid {
+  color: black;
+  font-size: xx-large;
+  display: flex;
+  justify-content: end;
+  padding: 7px;
+}
+.icon {
+  color: white;
+  font-size: xx-large;
+  display: flex;
+  justify-content: end;
+  padding: 7px;
+}
+
+@media (min-width: 300px) and (max-width: 770px) {
+  #box1 {
+    height: 190px;
+    width: 290px;
+    background-color: lightskyblue;
+    margin-top: 20px;
+    position: absolute;
+    text-align: center;
+  }
+  #box2 {
+    height: 190px;
+    width: 290px;
+    background-color: purple;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    position: absolute;
+  }
+  #box3 {
+    height: 190px;
+    width: 290px;
+    margin-top: 20px;
+    background-color: pink;
+    color: white;
+    text-align: center;
+    position: absolute;
+  }
+  .box11 {
+    height: 190px;
+    width: 290px;
+    background-color: lightskyblue;
+    color: white;
+    margin-top: 20px;
+    background-image: url(./assassins.png);
+
+    background-position: top;
+  }
+  #image-content {
+    position: relative;
+  }
+  .text-content {
+    height: 190px;
+    width: 290px;
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+    position: absolute;
+  }
+  .box12 {
+    height: 190px;
+    width: 290px;
+    margin-top: 20px;
+    background-color: purple;
+    color: white;
+
+    /* position: relative; */
+  }
+  #image-content-1 {
+    position: relative;
+  }
+  .text-content-1 {
+    height: 190px;
+    width: 290px;
+    margin-top: 20px;
+    text-align: center;
+    position: absolute;
+    color: white;
+  }
+  .box13 {
+    height: 190px;
+    width: 290px;
+    margin-top: 20px;
+    background-color: pink;
+    color: white;
+  }
+  #image-content-2 {
+    position: relative;
+  }
+  .text-content-2 {
+    height: 190px;
+    width: 290px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    position: absolute;
+  }
+  #box1:hover,
+  #box2:hover,
+  #box3:hover {
+    opacity: 0;
+  }
+
+  /* for displaying content upon hovering */
+
+  .popup-content {
+    /*Hides child-image content when there is no "active" class */
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .popup-content.active {
+    /*Shows child-image content when "active" class is present */
+    visibility: visible;
+  }
+  body {
+    background-image: url(./Games.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  video {
+    visibility: hidden;
+  }
+}
